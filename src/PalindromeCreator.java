@@ -24,7 +24,7 @@ public class PalindromeCreator {
 			textReversed += text.charAt(i);
 		}
 		System.out.println(text + textReversed );
-	
+		in.close();
 	}
 
 }

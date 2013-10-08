@@ -43,6 +43,13 @@ public class Overlaps {
 
 	}
 	
+	/**
+	 * Checks if a point is within a rectangle. 
+	 * @param user_point The point to b checked
+	 * @param rectangle_upper_left The upper left point (x,y) of a rectangle.
+	 * @param rectangle_lower_right The lower right point (x,y) of a rectangle
+	 * @return inside A boolean determining if it is within the rectangle or not.
+	 */
 	public static boolean Inside_Rectangle(Point user_point, Point rectangle_upper_left, Point rectangle_lower_right) {
 		boolean inside = false;
 		if (user_point.x >= rectangle_upper_left.x && user_point.x <= rectangle_lower_right.x) {

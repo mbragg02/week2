@@ -32,7 +32,7 @@ public class LineToColumn {
 			
 		}
 		
-
+		in.close();
 	}
 
 }

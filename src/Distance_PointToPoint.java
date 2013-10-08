@@ -44,11 +44,20 @@ public class Distance_PointToPoint {
 					
 
 	}
-	public static double distance(double a, double b, double x, double y) {
+	
+	/**
+	 * Finds the distance between two points.
+	 * @param x1 The first points x coordinate 
+	 * @param y1 The first points y coordinate
+	 * @param x The second points x coordinate
+	 * @param y The second points y coordinate
+	 * @return distance The distance between the two points
+	 */
+	public static double distance(double x1, double y1, double x, double y) {
 		double distance = 0.0;
 		// Pythagorean Theorem c2 = a2 + b2
-		double oneSide = a - x;
-		double secondSide = b - y;
+		double oneSide = x1 - x;
+		double secondSide = y1 - y;
 		distance = Math.sqrt((Math.pow(oneSide, 2) + Math.pow(secondSide, 2)));
 		return distance;
 	}

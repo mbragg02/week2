@@ -25,6 +25,7 @@ public class CountingLetters {
 			}
 		}
 		System.out.println(z + " occurs " + counter + " times in the text.");
+		in.close();
 	}
 
 }

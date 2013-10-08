@@ -129,7 +129,7 @@ public class YourChange {
 			
 		}
 		}
-
+		in.close();
 	}
 
 }

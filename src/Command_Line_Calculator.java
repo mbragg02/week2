@@ -17,13 +17,14 @@ public class Command_Line_Calculator {
 		boolean subtraction = false;
 		String text = "";
 		boolean valid = false;
-		
+		Scanner in = new Scanner(System.in);
 		
 		while (!valid) {
 			System.out.print("Please enter a mathematical operation. eg '3/5' : ");
-			Scanner in = new Scanner(System.in);
+			
 			
 			text = in.nextLine();
+			
 			
 			for (int i = 0; i < text.length(); i ++ ) {
 				char x = text.charAt(i);
@@ -55,6 +56,7 @@ public class Command_Line_Calculator {
 				System.out.println("Not a valid operation.");
 			}
 		}
+		in.close();
 		
 		String x = text.substring(0, counter).trim();
 		String y = text.substring(counter + 1).trim();

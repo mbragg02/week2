@@ -36,7 +36,7 @@ public class Palindrome {
 		} else {
 			System.out.println("No it is not a palindrome.");
 		}
-		
+		in.close();
 	}
 
 }

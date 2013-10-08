@@ -31,6 +31,7 @@ public class Calculator {
 			in.next();
 		}
 		double inputB = in.nextDouble();
+		
 			
 		boolean invalidInput = true;
 		
@@ -65,6 +66,7 @@ public class Calculator {
 			}
 			
 		}
+		in.close();
 			
 
 	}
